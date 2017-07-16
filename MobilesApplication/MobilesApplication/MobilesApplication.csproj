@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9570D26-5720-49DD-AFA6-E7ACCAE20510}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilesApplication</RootNamespace>
+    <AssemblyName>MobilesApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=10.1.0.0, Culture=neutral, PublicKeyToken=ff0069e61369d6d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v10.2.Core, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v10.2.Core, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v10.2.Core, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v10.2.UI, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ping5_Tools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="PulseButton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PulseButton.dll</HintPath>
+    </Reference>
+    <Reference Include="RotatorCtrl, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RotatorCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member Manisger\MemberListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member Manisger\MemberListForm.Designer.cs">
+      <DependentUpon>MemberListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member Manisger\RegisterMemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member Manisger\RegisterMemberForm.Designer.cs">
+      <DependentUpon>RegisterMemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salers\BillListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salers\BillListForm.Designer.cs">
+      <DependentUpon>BillListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salers\ChangePassWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salers\ChangePassWordForm.Designer.cs">
+      <DependentUpon>ChangePassWordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salers\OrderListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salers\OrderListForm.Designer.cs">
+      <DependentUpon>OrderListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salers\XProductOrder.cs" />
+    <Compile Include="Salers\XtraReportBill.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Salers\XtraReportBill.Designer.cs">
+      <DependentUpon>XtraReportBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salers\XtraReportOder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Salers\XtraReportOder.Designer.cs">
+      <DependentUpon>XtraReportOder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Recieved\ColumnsChartProductListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Recieved\ColumnsChartProductListForm.Designer.cs">
+      <DependentUpon>ColumnsChartProductListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Recieved\ProductListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Recieved\ProductListForm.Designer.cs">
+      <DependentUpon>ProductListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Recieved\StockReceivedListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Recieved\StockReceivedListForm.Designer.cs">
+      <DependentUpon>StockReceivedListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Recieved\XProduct.cs" />
+    <Compile Include="Stock Recieved\XRBinddingCollection.cs" />
+    <Compile Include="Stock Recieved\XStockReceived.cs" />
+    <Compile Include="Stock Recieved\XtraReportProducts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Stock Recieved\XtraReportProducts.Designer.cs">
+      <DependentUpon>XtraReportProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Recieved\XtraReportStockReceivedDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Stock Recieved\XtraReportStockReceivedDetails.Designer.cs">
+      <DependentUpon>XtraReportStockReceivedDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wages Manisger\WageCoefficientListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wages Manisger\WageCoefficientListForm.Designer.cs">
+      <DependentUpon>WageCoefficientListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wages Manisger\WageListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wages Manisger\WageListForm.Designer.cs">
+      <DependentUpon>WageListForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Manisger\MemberListForm.resx">
+      <DependentUpon>MemberListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Manisger\RegisterMemberForm.resx">
+      <DependentUpon>RegisterMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Salers\BillListForm.resx">
+      <DependentUpon>BillListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salers\ChangePassWordForm.resx">
+      <DependentUpon>ChangePassWordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salers\OrderListForm.resx">
+      <DependentUpon>OrderListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salers\XtraReportBill.resx">
+      <DependentUpon>XtraReportBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salers\XtraReportOder.resx">
+      <DependentUpon>XtraReportOder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Recieved\ColumnsChartProductListForm.resx">
+      <DependentUpon>ColumnsChartProductListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Recieved\ProductListForm.resx">
+      <DependentUpon>ProductListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Recieved\StockReceivedListForm.resx">
+      <DependentUpon>StockReceivedListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Recieved\XtraReportProducts.resx">
+      <DependentUpon>XtraReportProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Recieved\XtraReportStockReceivedDetails.resx">
+      <DependentUpon>XtraReportStockReceivedDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wages Manisger\WageCoefficientListForm.resx">
+      <DependentUpon>WageCoefficientListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wages Manisger\WageListForm.resx">
+      <DependentUpon>WageListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Entities.Member.datasource" />
+    <None Include="Properties\DataSources\Entities.Product.datasource" />
+    <None Include="Properties\DataSources\Entities.StockReceived.datasource" />
+    <None Include="Properties\DataSources\Entities.StockReceivedDetail.datasource" />
+    <None Include="Properties\DataSources\MobilesApplication.Salers.OrderDetailProduct.datasource" />
+    <None Include="Properties\DataSources\MobilesApplication.Salers.XOrder.datasource" />
+    <None Include="Properties\DataSources\MobilesApplication.Salers.XProductOrder.datasource" />
+    <None Include="Properties\DataSources\MobilesApplication.Stock_Recieved.XProduct.datasource" />
+    <None Include="Properties\DataSources\MobilesApplication.Stock_Recieved.XStockReceived.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{9F5498AB-F44D-485C-906C-B262B469414D}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL.SqlServer\DAL.SqlServer.csproj">
+      <Project>{CD97FC3E-106E-406F-9068-F67E896A48E8}</Project>
+      <Name>DAL.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{AF23CC48-5FE2-44EA-8E8D-D43054ABEB17}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View Manisger\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
